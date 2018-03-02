@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tigani.testmvp.Registeration.RegisterationActivity">
+
+    <Button
+        android:id="@+id/button_registeration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="register"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/editText_companyname"
+        android:layout_marginTop="34dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_companyname"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editText_companyname" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="59dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="71dp" />
+
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="phone"
+        android:maxLength="13"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/editText_name"
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_name"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editText_name" />
+
+    <EditText
+        android:id="@+id/editText_passsword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="password"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/editText_phone"
+        android:layout_marginTop="38dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_phone"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editText_phone" />
+
+    <EditText
+        android:id="@+id/editText_companyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="CompanyName"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/editText_passsword"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_passsword"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editText_passsword" />
+</android.support.constraint.ConstraintLayout>
